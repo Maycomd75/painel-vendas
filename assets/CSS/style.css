@@ -1,0 +1,248 @@
+/* ================================
+   RESET E CONFIGURAÇÃO GLOBAL
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    /* REMOVIDO overflow-x: hidden; */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ================================
+   SIDEBAR
+================================ */
+.sidebar {
+    width: 230px;
+    background: #1F2937;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 8px 10px;
+    display: block;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #374151;
+}
+
+/* ================================
+   ÁREA PRINCIPAL
+================================ */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ================================
+   TABELA
+================================ */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* scroll horizontal funcionando */
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000025;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1800px; /* garante que todas as colunas aparecem */
+}
+
+thead th {
+    background: #d9d9d9;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+thead .titulo-grupo {
+    background: #bfbfbf;
+}
+
+/* Linha TOTAL */
+.total-geral th {
+    background: #4b5563;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Linhas do corpo */
+tbody td {
+    border: 1px solid #cccccc;
+    padding: 7px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ================================
+   CORES DE LINHAS
+================================ */
+.linha-azul {
+    background: #dbeafe;
+}
+
+.linha-cinza {
+    background: #e9ebe5;
+}
+
+.linha-verde {
+    background: #d1fae5;
+
+}
+
+.linha-amarela {
+    background: #cff71e;
+
+}
+
+/* Hover */
+tbody tr:hover {
+    background: #f5f6f3;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    table {
+        min-width: 1400px;
+    }
+
+    .table-wrapper {
+        padding: 10px;
+    }
+}
+/* ======= MODO MONITOR / TV GRANDE (acima de 1600px) ======= */
+@media (min-width: 1600px) {
+    table {
+        transform: scale(1);   /* tamanho original */
+        transform-origin: top left;
+    }
+}
+
+/* ======= NOTEBOOK / DESKTOP MÉDIO (1200px – 1599px) ======= */
+@media (max-width: 1599px) and (min-width: 1200px) {
+    table {
+        transform: scale(0.85); 
+        transform-origin: top left;
+    }
+}
+
+/* ======= TABLET HORIZONTAL (900px – 1199px) ======= */
+@media (max-width: 1199px) and (min-width: 900px) {
+    table {
+        transform: scale(0.75);
+        transform-origin: top left;
+    }
+}
+
+/* ======= TABLET VERTICAL (600px – 899px) ======= */
+@media (max-width: 899px) and (min-width: 600px) {
+    table {
+        transform: scale(0.60);
+        transform-origin: top left;
+    }
+}
+
+/* ======= CELULAR (abaixo de 599px) ======= */
+@media (max-width: 599px) {
+
+    .table-wrapper {
+        overflow-x: auto; /* scroll lateral */
+    }
+
+    table {
+        min-width: 1200px; /* garante leitura */
+        transform: scale(1);
+    }
+
+    thead th, tbody td {
+        font-size: 12px;
+        padding: 4px;
+    }
+}
+.linha-logo-unica {
+    background: #818080 !important; /* cinza claro */
+}
+
+.celula-logo {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.logo-pepsico {
+    height: 102px;  /* ajuste aqui o tamanho da logo */
+    object-fit: contain;
+}
+.title-container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.flip-text {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+
+    /* Animação 3D */
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+

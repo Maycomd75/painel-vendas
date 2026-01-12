@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Vendas</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    
+
+    <!-- Área principal -->
+    <main class="main">
+
+        <header class="header">
+    <h1 class="title-container">
+    <span id="title-rotate" class="flip-text"></span>
+</h1>
+
+</header>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead><thead>
+
+    <!-- Linha exclusiva da logo -->
+    <tr class="linha-logo-unica">
+        <th colspan="26" class="celula-logo">
+            <img src="https://logosmarcas.net/wp-content/uploads/2022/03/Pepsico-Logo-500x281.png" class="logo-pepsico">
+        </th>
+    </tr>
+                    <!-- Linha 1 -->
+                    <tr>
+                        <th rowspan="2"></th>
+                        <th rowspan="2"></th>
+
+                        <!-- Grupo META -->
+                        <th colspan="3" class="titulo-grupo meta">PESO SALT</th>
+                        <th colspan="3" class="titulo-grupo meta">PESO FOODS</th>
+                        <th colspan="3" class="titulo-grupo meta">POSITIVAÇÃO SALT</th>                     
+                        <th colspan="3" class="titulo-grupo meta">POSITIVAÇÃO FOODS</th>
+                        <th colspan="3" class="titulo-grupo meta">COMBO SALT</th>
+                        <th colspan="3" class="titulo-grupo meta">COMBO FOODS</th>
+                        <th colspan="3" class="titulo-grupo meta">INVOLVES</th>
+                        <th colspan="3" class="titulo-grupo meta">RACKS</th>
+                    </tr>
+
+                    <!-- Linha 2 (META / REAL / %) -->
+                    <tr>
+                        <!-- Para cada meta: META • REAL • % -->
+                        <!-- 8 metas = 24 colunas -->
+                        <th>META</th><th>REAL</th><th>%</th>
+                        <th>META</th><th>REAL</th><th>%</th>
+                        <th>META</th><th>REAL</th><th>%</th>
+                        <th>META</th><th>REAL</th><th>%</th>
+                        <th>META</th><th>REAL</th><th>%</th>
+                        <th>META</th><th>REAL</th><th>%</th>
+                        <th>META</th><th>REAL</th><th>%</th> 
+                        <th>META</th><th>REAL</th><th>%</th>                        
+                    </tr>
+
+                    <!-- Linha TOTAL corrigida -->
+                    <tr class="total-geral">
+                        <th rowspan="2">RCA</th>
+                        <th rowspan="2">VENDEDOR</th>
+
+                        <!-- 8 metas × 3 colunas = 24 colunas -->
+                        <th></th><th></th><th></th>
+                        <th></th><th></th><th></th>
+                        <th></th><th></th><th></th>
+                        <th></th><th></th><th></th>
+                        <th></th><th></th><th></th>
+                        <th></th><th></th><th></th>
+                        <th></th><th></th><th></th>
+                        <th></th><th></th><th></th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr class="linha-azul">
+     <td>1323</td><td>ELIAS DA SILVA LIMA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1381</td><td>LEANDRO RIBEIRO DE ARAUJO</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1477</td><td>RICARDO PEREIRA AGUIAR</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1756</td><td>DA SSAIEV FERREIRA DA SILVA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1745</td><td>ALEXANDRE DE SOUSA MEDEIROS</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1517</td><td>LUAN DE SOUSA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1523</td><td>EUGENIO LUSTOSA RIBEIRO DA SILVA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1472</td><td>MAURIELIO SILVA COSTA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1752</td><td>ANTONIO ANDRADE SOARES DA SILVA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-azul">
+        <td>1753</td><td>VITOR MANOEL OLIVEIRA DA SILVA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-cinza">
+        <td>19</td><td>FRANCINALDO SILVA DE BARROS</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+
+    <tr class="linha-verde">
+        <td>1509</td><td>CAYRO COIMBRA OLIVEIRA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1481</td><td>JOILSON DE SOUSA OLIVEIRA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1492</td><td>VINICIUS SILVA JANUARIO</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1727</td><td>RICARDO RAMOS DA SILVA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1512</td><td>MARCELO RIBEIRO DE SOUSA SILVA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1741</td><td>ANTONIO RODRIGUES NETO</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1765</td><td>GUSTAVO FERNANDES DOS REIS GUIDA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1322</td><td>JOAO PEDRO DOS SANTOS BARBOSA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1499</td><td>JOAO REIDSON SILVA PAES</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1488</td><td>LUCIO FLAVIO OLIVEIRA DUARTE</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-verde">
+        <td>1755</td><td>ISAIAS RIBEIRO DO CARMO</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-cinza">
+        <td>20</td><td>HEBERSON ALVES MOREIRA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+
+    <tr class="linha-amarela">
+        <td>1763</td><td>ANTONIO CARLOS DA SILVA BARROS</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1761</td><td>RYAN MARTINS GOMES</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1743</td><td>DANILO DE BRITO ALVES</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1744</td><td>SAMUEL DA SILVA SANTOS</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1746</td><td>ITALO TELES CARDOSO</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1463</td><td>JUVENAL MILHOMEN</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1742</td><td>ELTON JHONE CARVALHO</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1445</td><td>JOSE HENRIQUE DA LUZ CARVALHO</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-amarela">
+        <td>1478</td><td>CLEITON ALVES PEREIRA</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+    <tr class="linha-cinza">
+        <td>18</td><td>MARCOS ALVES SILVA SANTOS</td>
+     <td>1200</td><td></td><td></td><td>800</td><td></td><td></td>
+     <td>120</td><td></td><td></td><td>90</td><td></td><td></td>
+     <td>60</td><td></td><td></td><td>45</td><td></td><td></td>
+     <td>30</td><td></td><td></td><td>15</td><td></td><td></td>
+    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
