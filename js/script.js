@@ -100,3 +100,4 @@ async function carregarDados() {
 }
 
 carregarDados();
+setInterval(carregarDados, 10000); // atualiza a cada 10 segundos
