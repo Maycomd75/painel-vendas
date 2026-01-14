@@ -121,7 +121,7 @@ tbody td {
    CORES DE LINHAS
 ================================ */
 .linha-azul {
-    background: #dbeafe;
+    background: #76acf5;
 }
 
 .linha-cinza {
@@ -129,12 +129,16 @@ tbody td {
 }
 
 .linha-verde {
-    background: #d1fae5;
+    background: #17e67c;
 
 }
 
 .linha-amarela {
     background: #cff71e;
+}
+
+  .linha-laranjada {
+    background: #f7ba88;
 
 }
 
@@ -245,4 +249,3 @@ tbody tr:hover {
     transform-style: preserve-3d;
     transition: transform 0.8s ease-in-out;
 }
-
