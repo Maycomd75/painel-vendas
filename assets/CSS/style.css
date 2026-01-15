@@ -239,13 +239,3 @@ tbody tr:hover {
     margin-bottom: 100px;
 }
 
-.flip-text {
-    display: inline-block;
-    font-size: 45px;
-    font-weight: bold;
-    color: rgb(10, 10, 10);
-
-    /* Animação 3D */
-    transform-style: preserve-3d;
-    transition: transform 0.8s ease-in-out;
-}
